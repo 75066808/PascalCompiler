@@ -1,0 +1,293 @@
+
+	  |
+1	. +-procedure hello:
+	    |
+3	. . +-routine:
+	      |
+3	. . . +-const: cn :
+	        |
+3	. . . . +-const_expr: : integer
+	      |
+4	. . . +-const: dn :
+	        |
+4	. . . . +-const_expr: : real
+	      |
+10	. . . +-type of ar is:
+	      |
+15	. . . +-type of br is:
+	      |
+17	. . . +-var:
+	        |
+17	. . . . +-Id_expr_basic: i
+	      |
+18	. . . +-var:
+	        |
+18	. . . . +-Id_expr_basic: j
+	      |
+19	. . . +-var:
+	        |
+19	. . . . +-Id_expr_basic: str
+	      |
+20	. . . +-var:
+	        |
+20	. . . . +-Id_expr_basic: z
+	      |
+22	. . . +-function add:
+	        |
+22	. . . . +-val param:
+	          |
+22	. . . . . +-Id_expr_basic: a
+	          |
+22	. . . . . +-Id_expr_basic: b
+	        |
+25	. . . . +-routine:
+	          |
+25	. . . . . +-assign_stmt:
+	            |
+25	. . . . . . +-Id_expr_basic: add
+	            |
+25	. . . . . . +-Op_expr:plus
+	              |
+25	. . . . . . . +-Id_expr_basic: a
+	              |
+25	. . . . . . . +-Id_expr_basic: b
+	      |
+30	. . . +-assign_stmt:
+	        |
+30	. . . . +-Id_expr_record: z
+	          |
+30	. . . . . +-Id_expr_basic: e
+	        |
+30	. . . . +-Op_expr:plus
+	          |
+30	. . . . . +-const_expr: : integer
+	          |
+30	. . . . . +-Op_expr:mul
+	            |
+30	. . . . . . +-const_expr: : integer
+	            |
+30	. . . . . . +-const_expr: : integer
+	      |
+31	. . . +-assign_stmt:
+	        |
+31	. . . . +-Id_expr_record: j
+	          |
+31	. . . . . +-Id_expr_basic: a
+	        |
+31	. . . . +-const_expr: : integer
+	      |
+32	. . . +-for:i to: 
+	        |
+32	. . . . +-const_expr: : integer
+	        |
+32	. . . . +-const_expr: : integer
+	        |
+33	. . . . +-assign_stmt:
+	          |
+33	. . . . . +-Id_expr_record: j
+	            |
+33	. . . . . . +-Id_expr_basic: b
+	          |
+33	. . . . . +-Op_expr:plus
+	            |
+33	. . . . . . +-Id_expr_record: j
+	              |
+33	. . . . . . . +-Id_expr_basic: a
+	            |
+33	. . . . . . +-Id_expr_basic: i
+	      |
+36	. . . +-procedure name:writeln
+	        |
+36	. . . . +-Id_expr_record: j
+	          |
+36	. . . . . +-Id_expr_basic: a
+	      |
+37	. . . +-while_stmt:
+	        |
+37	. . . . +-Op_expr:eq
+	          |
+37	. . . . . +-const_expr: : integer
+	          |
+37	. . . . . +-const_expr: : integer
+	        |
+38	. . . . +-assign_stmt:
+	          |
+38	. . . . . +-Id_expr_record: j
+	            |
+38	. . . . . . +-Id_expr_basic: a
+	          |
+38	. . . . . +-Fn_expr: add, args:
+	            |
+38	. . . . . . +-Id_expr_record: j
+	              |
+38	. . . . . . . +-Id_expr_basic: a
+	            |
+38	. . . . . . +-Id_expr_record: j
+	              |
+38	. . . . . . . +-Id_expr_basic: b
+	        |
+39	. . . . +-assign_stmt:
+	          |
+39	. . . . . +-Id_expr_basic: i
+	          |
+39	. . . . . +-Op_expr:minus
+	            |
+39	. . . . . . +-Id_expr_basic: i
+	            |
+39	. . . . . . +-const_expr: : integer
+	      |
+43	. . . +-while_stmt:
+	        |
+43	. . . . +-const_expr: : boolean
+	        |
+44	. . . . +-assign_stmt:
+	          |
+44	. . . . . +-Id_expr_basic: i
+	          |
+44	. . . . . +-Op_expr:plus
+	            |
+44	. . . . . . +-Id_expr_basic: i
+	            |
+44	. . . . . . +-const_expr: : integer
+	      |
+48	. . . +-procedure name:writeln
+	        |
+48	. . . . +-Id_expr_record: j
+	          |
+48	. . . . . +-Id_expr_basic: a
+	      |
+51	. . . +-repeat_stmt:
+	        |
+51	. . . . +-assign_stmt:
+	          |
+51	. . . . . +-Id_expr_record: j
+	            |
+51	. . . . . . +-Id_expr_basic: a
+	          |
+51	. . . . . +-Op_expr:div
+	            |
+51	. . . . . . +-Id_expr_record: j
+	              |
+51	. . . . . . . +-Id_expr_basic: a
+	            |
+51	. . . . . . +-const_expr: : integer
+	        |
+53	. . . . +-Op_expr:eq
+	          |
+52	. . . . . +-Op_expr:plus
+	            |
+52	. . . . . . +-const_expr: : integer
+	            |
+52	. . . . . . +-const_expr: : integer
+	          |
+52	. . . . . +-const_expr: : integer
+	      |
+56	. . . +-repeat_stmt:
+	        |
+56	. . . . +-assign_stmt:
+	          |
+56	. . . . . +-Id_expr_record: j
+	            |
+56	. . . . . . +-Id_expr_basic: a
+	          |
+56	. . . . . +-Op_expr:mul
+	            |
+56	. . . . . . +-Id_expr_record: j
+	              |
+56	. . . . . . . +-Id_expr_basic: a
+	            |
+56	. . . . . . +-const_expr: : integer
+	        |
+58	. . . . +-Op_expr:ueq
+	          |
+57	. . . . . +-Op_expr:plus
+	            |
+57	. . . . . . +-const_expr: : integer
+	            |
+57	. . . . . . +-const_expr: : integer
+	          |
+57	. . . . . +-const_expr: : integer
+	      |
+60	. . . +-procedure name:writeln
+	        |
+60	. . . . +-Id_expr_record: j
+	          |
+60	. . . . . +-Id_expr_basic: a
+	      |
+61	. . . +-case_stmt:
+	        |
+61	. . . . +-const_expr: : integer
+	        |
+62	. . . . +-case:
+	          |
+62	. . . . . +-const_expr: : integer
+	          |
+62	. . . . . +-assign_stmt:
+	            |
+62	. . . . . . +-Id_expr_basic: str
+	            |
+62	. . . . . . +-const_expr: : string
+	        |
+63	. . . . +-case:
+	          |
+63	. . . . . +-const_expr: : integer
+	          |
+63	. . . . . +-assign_stmt:
+	            |
+63	. . . . . . +-Id_expr_basic: str
+	            |
+63	. . . . . . +-const_expr: : string
+	        |
+64	. . . . +-case:
+	          |
+64	. . . . . +-Id_expr_basic: cn
+	          |
+64	. . . . . +-assign_stmt:
+	            |
+64	. . . . . . +-Id_expr_basic: str
+	            |
+64	. . . . . . +-const_expr: : string
+	        |
+65	. . . . +-case:
+	          |
+65	. . . . . +-const_expr: : integer
+	          |
+65	. . . . . +-assign_stmt:
+	            |
+65	. . . . . . +-Id_expr_basic: str
+	            |
+65	. . . . . . +-const_expr: : string
+	      |
+68	. . . +-if_stmt:
+	        |
+68	. . . . +-Op_expr:ge
+	          |
+68	. . . . . +-Id_expr_record: j
+	            |
+68	. . . . . . +-Id_expr_basic: a
+	          |
+68	. . . . . +-const_expr: : integer
+	        |
+69	. . . . +-assign_stmt:
+	          |
+69	. . . . . +-Id_expr_record: j
+	            |
+69	. . . . . . +-Id_expr_basic: a
+	          |
+69	. . . . . +-Op_expr:plus
+	            |
+69	. . . . . . +-Id_expr_record: j
+	              |
+69	. . . . . . . +-Id_expr_basic: a
+	            |
+69	. . . . . . +-const_expr: : integer
+	      |
+72	. . . +-procedure name:writeln
+	        |
+72	. . . . +-Id_expr_record: j
+	          |
+72	. . . . . +-Id_expr_basic: a
+	      |
+73	. . . +-procedure name:writeln
+	        |
+73	. . . . +-Id_expr_basic: str

@@ -1,0 +1,176 @@
+Line
+1	. . +- Procedure hello 
+	        |
+3	. . . . +- Routine 
+	            |
+3	. . . . . . +- Variable 
+	                |
+3	. . . . . . . . +- Integer
+	                |
+3	. . . . . . . . +- ans
+	            |
+4	. . . . . . +- Variable 
+	                |
+4	. . . . . . . . +- Char 
+	                |
+4	. . . . . . . . +- tmp
+	            |
+6	. . . . . . +- Function gcd 
+	                |
+6	. . . . . . . . +- Integer
+	                |
+6	. . . . . . . . +- Val parameter
+	                    |
+6	. . . . . . . . . . +- Integer
+	                    |
+6	. . . . . . . . . . +- a
+	                    |
+6	. . . . . . . . . . +- b
+	                |
+8	. . . . . . . . +- Routine 
+	                    |
+8	. . . . . . . . . . +- If 
+	                        |
+8	. . . . . . . . . . . . +- Operation and
+	                            |
+8	. . . . . . . . . . . . . . +- Operation eq
+	                                |
+8	. . . . . . . . . . . . . . . . +- b
+	                                |
+8	. . . . . . . . . . . . . . . . +- Constant Integer
+	                            |
+8	. . . . . . . . . . . . . . +- Operation eq
+	                                |
+8	. . . . . . . . . . . . . . . . +- Constant Integer
+	                                |
+8	. . . . . . . . . . . . . . . . +- Constant Integer
+	                        |
+9	. . . . . . . . . . . . +- Assignment 
+	                            |
+9	. . . . . . . . . . . . . . +- gcd
+	                            |
+9	. . . . . . . . . . . . . . +- a
+	                        |
+12	. . . . . . . . . . . . +- If 
+	                            |
+12	. . . . . . . . . . . . . . +- Operation or
+	                                |
+12	. . . . . . . . . . . . . . . . +- Operation eq
+	                                    |
+12	. . . . . . . . . . . . . . . . . . +- Operation plus
+	                                        |
+12	. . . . . . . . . . . . . . . . . . . . +- b
+	                                        |
+12	. . . . . . . . . . . . . . . . . . . . +- a
+	                                    |
+12	. . . . . . . . . . . . . . . . . . +- Constant Integer
+	                                |
+12	. . . . . . . . . . . . . . . . +- Operation eq
+	                                    |
+12	. . . . . . . . . . . . . . . . . . +- Constant Integer
+	                                    |
+12	. . . . . . . . . . . . . . . . . . +- Constant Integer
+	                            |
+13	. . . . . . . . . . . . . . +- Assignment 
+	                                |
+13	. . . . . . . . . . . . . . . . +- gcd
+	                                |
+13	. . . . . . . . . . . . . . . . +- Function gcd  args 
+	                                    |
+13	. . . . . . . . . . . . . . . . . . +- b
+	                                    |
+13	. . . . . . . . . . . . . . . . . . +- Operation mod
+	                                        |
+13	. . . . . . . . . . . . . . . . . . . . +- a
+	                                        |
+13	. . . . . . . . . . . . . . . . . . . . +- b
+	                    |
+19	. . . . . . . . . . +- If 
+	                        |
+19	. . . . . . . . . . . . +- Operation and
+	                            |
+19	. . . . . . . . . . . . . . +- Operation eq
+	                                |
+19	. . . . . . . . . . . . . . . . +- b
+	                                |
+19	. . . . . . . . . . . . . . . . +- Constant Integer
+	                            |
+19	. . . . . . . . . . . . . . +- Operation eq
+	                                |
+19	. . . . . . . . . . . . . . . . +- Constant Integer
+	                                |
+19	. . . . . . . . . . . . . . . . +- Constant Integer
+	                        |
+20	. . . . . . . . . . . . +- Assignment 
+	                            |
+20	. . . . . . . . . . . . . . +- gcd
+	                            |
+20	. . . . . . . . . . . . . . +- a
+	                        |
+23	. . . . . . . . . . . . +- If 
+	                            |
+23	. . . . . . . . . . . . . . +- Operation or
+	                                |
+23	. . . . . . . . . . . . . . . . +- Operation eq
+	                                    |
+23	. . . . . . . . . . . . . . . . . . +- Operation plus
+	                                        |
+23	. . . . . . . . . . . . . . . . . . . . +- a
+	                                        |
+23	. . . . . . . . . . . . . . . . . . . . +- b
+	                                    |
+23	. . . . . . . . . . . . . . . . . . +- Constant Integer
+	                                |
+23	. . . . . . . . . . . . . . . . +- Operation eq
+	                                    |
+23	. . . . . . . . . . . . . . . . . . +- Constant Integer
+	                                    |
+23	. . . . . . . . . . . . . . . . . . +- Constant Integer
+	                            |
+24	. . . . . . . . . . . . . . +- Assignment 
+	                                |
+24	. . . . . . . . . . . . . . . . +- gcd
+	                                |
+24	. . . . . . . . . . . . . . . . +- Function gcd  args 
+	                                    |
+24	. . . . . . . . . . . . . . . . . . +- b
+	                                    |
+24	. . . . . . . . . . . . . . . . . . +- Operation mod
+	                                        |
+24	. . . . . . . . . . . . . . . . . . . . +- a
+	                                        |
+24	. . . . . . . . . . . . . . . . . . . . +- b
+	            |
+33	. . . . . . +- Label 1 Assignment 
+	                |
+33	. . . . . . . . +- tmp
+	                |
+33	. . . . . . . . +- Constant Char 
+	            |
+34	. . . . . . +- Assignment 
+	                |
+34	. . . . . . . . +- ans
+	                |
+34	. . . . . . . . +- Operation mul
+	                    |
+34	. . . . . . . . . . +- Function gcd  args 
+	                        |
+34	. . . . . . . . . . . . +- Operation plus
+	                            |
+34	. . . . . . . . . . . . . . +- Constant Integer
+	                            |
+34	. . . . . . . . . . . . . . +- Constant Integer
+	                        |
+34	. . . . . . . . . . . . +- Constant Integer
+	                    |
+34	. . . . . . . . . . +- Function gcd  args 
+	                        |
+34	. . . . . . . . . . . . +- Constant Integer
+	                        |
+34	. . . . . . . . . . . . +- Constant Integer
+	            |
+35	. . . . . . +- Goto 1
+	            |
+36	. . . . . . +- Procedure writeln
+	                |
+36	. . . . . . . . +- ans
