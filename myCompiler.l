@@ -118,23 +118,29 @@
 	strcpy(yylval.strValue, yytext);
 	return NAME;
 }
+
 [0-9]+	{
 	yylval.intNum = atoi(yytext);
 	return INTEGER;
 }
+
 [0-9]+\.[0-9]+	{
 	yylval.floatNum = atof(yytext);
 	return REAL;
 }
+
 \'.\'	{
 	yylval.intNum = yytext[1];
 	return CHAR;
 }
+
 \'[^'\n]*\'	{
 	strcpy(yylval.strValue, yytext);
 	return STRING;
 }
+
 .	{}
+
 \n	{}
 %%
 int yywrap(void){
