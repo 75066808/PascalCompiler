@@ -304,7 +304,6 @@ void printExpression(FILE *treeout, Node *p){
 			fprintf(treeout, "Constant ");
 			if(p->dtype)
 				printType(treeout, p->dtype);
-			printf("this is for test %d\n", p->attr.intNum);
 			break;
 		}
 	}
