@@ -1,4 +1,3 @@
-#pragma nce
 #include "mySymbolTable.hpp"
 #include "mySyntaxTree.hpp"
 #include <fstream>
