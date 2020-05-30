@@ -20,15 +20,15 @@ typedef enum {
 } Nodes;
 
 typedef enum {
-	DECL,
 	INTEGE,
 	REA,
 	BOOLEA,
 	CHARA,
 	STR,
-	ENUME,
 	ARRA,
 	RECOR,
+	ENUME,
+	DECL,
 	SELFDEFINE
 } Types;
 
