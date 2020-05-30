@@ -349,9 +349,8 @@ void generateIR(ofstream &out, Node *node, SymbolTable *table, string assignName
                         for (Node *temp = node->children[1]; temp; temp = temp->sibling) {
                             tempLabel = IRGenerator::generateTempLabel();
                             generateIR(out, temp->children[0], table);
-                            resultName2 = IRGenerator::generateResultName(out, temp->children[0]);
 
-                            IRGenerator::recycleTempName(resultName2);
+                            resultName2 = IRGenerator::generateResultValue(temp->children[0]);
 
                             tempName = IRGenerator::generateTempName();
                             IRGenerator::generateAssignPrint(out, tempName, resultName1, "!=", resultName2);

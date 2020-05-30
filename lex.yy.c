@@ -1212,7 +1212,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 121 "myCompiler.l"
+#line 122 "myCompiler.l"
 {
 	yylval.intNum = atoi(yytext);
 	return INTEGER;
@@ -1220,7 +1220,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 125 "myCompiler.l"
+#line 127 "myCompiler.l"
 {
 	yylval.floatNum = atof(yytext);
 	return REAL;
@@ -1228,7 +1228,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 129 "myCompiler.l"
+#line 132 "myCompiler.l"
 {
 	yylval.intNum = yytext[1];
 	return CHAR;
@@ -1236,7 +1236,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 133 "myCompiler.l"
+#line 137 "myCompiler.l"
 {
 	strcpy(yylval.strValue, yytext);
 	return STRING;
@@ -1244,18 +1244,18 @@ YY_RULE_SETUP
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 137 "myCompiler.l"
+#line 142 "myCompiler.l"
 {}
 	YY_BREAK
 case 64:
 /* rule 64 can match eol */
 YY_RULE_SETUP
-#line 138 "myCompiler.l"
+#line 144 "myCompiler.l"
 {}
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
-#line 139 "myCompiler.l"
+#line 145 "myCompiler.l"
 ECHO;
 	YY_BREAK
 #line 1262 "lex.yy.c"
@@ -2275,7 +2275,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 139 "myCompiler.l"
+#line 145 "myCompiler.l"
 
 int yywrap(void){
 	return 1;
