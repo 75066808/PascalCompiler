@@ -67,11 +67,11 @@ typedef enum {
 typedef enum {
 	PLUS_OP,	
 	MINUS_OP,	
-	OR_OP,	
 	MUL_OP,	
 	DIV_OP,	
 	MOD_OP,	
-	AND_OP,	
+	AND_OP,
+	OR_OP,
 	GE_OP,	
 	GT_OP,	
 	LE_OP,	
