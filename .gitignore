@@ -1,0 +1,12 @@
+*.o
+*.exe
+
+*.ir
+*.sym
+*.tree
+
+*.tab.c
+
+*.yy.c
+
+main
